@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>HTML Lanjutan</title>
+</head>
+
+<body>
+    <form action="proses.php" method="post">
+        <fieldset>
+            <legend>Data Pelanggan</legend>
+            <p>
+                <label for="nama">Nama</label>
+                <input type="text" id="nama" name="nama">
+            </p>
+            <p>
+                <label for="alamat">Alamat</label>
+                <textarea id="alamat" name="alamat" cols="20" rows="3"></textarea>
+            </p>
+            <p>
+                <label>Jenis Kelamin</label>
+                <input id="jk_l" type="radio" name="kelamin" value="L" /><label for="jk_l">Laki-laki</label>
+                <input id="jk_p" type="radio" name="kelamin" value="P" /><label for="jk_p">Perempuan</label>
+            </p>
+            <p>
+                <label for="cita_cita">Cita Cita</label>
+                <select name="cita_cita" id="cita_cita">
+                    <option value="pilot">Pilot</option>
+                    <option value="tentara">Tentara</option>
+                    <option value="guru">Guru</option>
+                    <option value="presiden">Presiden</option>
+                    <option value="orang_kaya">Orang Kaya</option>
+                    <option value="astronot">Astronot</option>
+                  </select>
+            </p>
+            <p>
+                <label for="hobi">Hobi</label>
+                <select name="hobi" id="hobi" multiple>
+                    <option value="sepak_bola">Sepak Bola</option>
+                    <option value="sepedaan">Sepedaan</option>
+                    <option value="main_games">Main Games</option>
+                    <option value="membaca">Membaca</option>
+                    <option value="coding">Coding</option>
+                    <option value="berorganisasi">Berorganisasi</option>
+                    <option value="nonton_tv">Nonton TV</option>
+                  </select>
+            </p>
+            <p><input type="submit" value="Login"></p>
+        </fieldset>
+    </form>
+</body>
+
+</html>
